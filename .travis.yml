@@ -1,0 +1,14 @@
+language: go
+
+go:
+  - "1.10"
+
+deploy:
+  provider: heroku
+  buildpack: https://github.com/heroku/heroku-buildpack-go.git
+  api_key:
+    secure: # your encrypted key
+  app: # your app name
+  on: master
+
+sudo: false
