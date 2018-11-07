@@ -7,7 +7,7 @@ deploy:
   provider: heroku
   buildpack: https://github.com/heroku/heroku-buildpack-go.git
   api_key:
-    secure:
+    secure: "fae26032-e760-4c13-91ae-c90961c482a8"
   app: salty-dusk-36800
   on: master
 
