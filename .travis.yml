@@ -2,3 +2,13 @@ language: go
 
 go:
   - "1.10"
+
+deploy:
+  provider: heroku
+  buildpack: https://github.com/heroku/heroku-buildpack-go.git
+  api_key:
+    secure: "e90ce792-c759-451a-96d8-d2e1cb31d592"
+  app: salty-dusk-36800
+  on: master
+
+sudo: false
