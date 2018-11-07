@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	port := os.getenv("PORT")
+	port := os.Getenv("PORT")
 	var addr string
 	if port == "" {
 		addr = "localhost:8080"
